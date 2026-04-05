@@ -566,3 +566,8 @@ footer {
   .notes-grid { grid-template-columns: 1fr; }
   .spot { min-height: auto; }
 }
+
+.image {
+  margin-top: 32px;
+  text-align: center;
+}
