@@ -567,7 +567,28 @@ footer {
   .spot { min-height: auto; }
 }
 
+/* This centers the div container */
 .image {
   margin-top: 32px;
   text-align: center;
+}
+
+/* This targets the actual img tag INSIDE .image */
+.image img {
+  width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .image img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .image img {
+    width: 100%;
+  }
 }
