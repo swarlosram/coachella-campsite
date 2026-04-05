@@ -460,6 +460,8 @@ header {
   left: 0;
   color: var(--gold);
   opacity: 0.5;
+  display: none
+  
 }
 
 /* â€”â€”â€” SPOT MEASUREMENT LINES (visual) â€”â€”â€” */
