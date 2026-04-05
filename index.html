@@ -1,291 +1,431 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coachella 2026 — Car Camping Layout</title>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-</head>
-<body>
- 
-<div class="wrapper">
- 
-  <!-- HEADER -->
-  <header>
-    <div class="logo-lockup">
-      <div class="logo-text">COACHELLA</div>
-      <div class="logo-sub">Valley Music &amp; Arts Festival</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coachella 2026 — Car Camping Layout</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- HEADER -->
+      <header>
+        <div class="logo-lockup">
+          <div class="logo-text">COACHELLA</div>
+          <div class="logo-sub">Valley Music &amp; Arts Festival</div>
+        </div>
+        <div class="header-divider"></div>
+        <div class="header-title">Car Camping Layout Guide</div>
+        <div class="header-meta">
+          APR 10–12 &amp; 17–19, 2026 &nbsp;·&nbsp; Weekend 1 &nbsp;·&nbsp;
+          Alex's Group
+        </div>
+      </header>
+
+      <!-- DIAGRAM -->
+      <div class="diagram-container">
+        <div class="road-label">↑ &nbsp; CAMP ROAD / MAIN PATHWAY &nbsp; ↑</div>
+        <div class="road-line">← Road runs this direction →</div>
+
+        <!-- Per-spot depth breakdown bar -->
+        <div
+          style="
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 4px;
+            position: relative;
+            z-index: 2;
+          "
+        >
+          <div>
+            <div class="meas-bar">
+              <div class="meas-seg car-zone">15 ft — Car</div>
+              <div class="meas-seg tent-zone">15 ft — Camp</div>
+            </div>
+            <div class="meas-caption">Spot depth (30 ft total)</div>
+          </div>
+          <div>
+            <div class="meas-bar">
+              <div class="meas-seg car-zone">15 ft — Car</div>
+              <div class="meas-seg hub-zone">30 ft — Communal zone</div>
+            </div>
+            <div class="meas-caption">Spot depth (30 ft total)</div>
+          </div>
+          <div>
+            <div class="meas-bar">
+              <div class="meas-seg car-zone">15 ft — Car</div>
+              <div class="meas-seg tent-zone">15 ft — Camp</div>
+            </div>
+            <div class="meas-caption">Spot depth (30 ft total)</div>
+          </div>
+        </div>
+
+        <!-- SPOTS GRID -->
+        <div class="spots-grid">
+          <!-- ===== SPOT 1 ===== -->
+          <div class="spot">
+            <div class="spot-header">
+              <div class="spot-number">Spot 1</div>
+              <div class="spot-dims">
+                30 × 10 ft &nbsp;·&nbsp; 1 vehicle required
+              </div>
+            </div>
+
+            <!-- CAR (road-side, top 15 ft) -->
+            <div class="spot-section sec-car" style="min-height: 115px">
+              <div class="section-label">🚗 Vehicle zone — 15 ft</div>
+              <div class="section-name">Car #1</div>
+              <div class="section-note">
+                Parked parallel to road, nose-in.<br />Use trunk as staging
+                area.<br />Windblock on road side.
+              </div>
+              <div
+                style="
+                  margin-top: 8px;
+                  padding: 6px 8px;
+                  background: rgba(184, 92, 56, 0.08);
+                  border: 1px solid rgba(184, 92, 56, 0.2);
+                  border-radius: 2px;
+                  font-size: 9px;
+                  color: var(--rust-light);
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                "
+              >
+                Front bumper faces road ↑
+              </div>
+            </div>
+
+            <!-- CANOPY -->
+            <div class="spot-section sec-shade">
+              <div class="section-label">☂ Canopy / wind shade</div>
+              <div class="section-name">10 × 10 ft pop-up</div>
+              <div class="section-note">
+                Stake between car + tent for midday shade. Tie to car rack.
+              </div>
+            </div>
+
+            <!-- TENT A -->
+            <div class="spot-section sec-tent">
+              <div class="section-label">⛺ Sleeping — Tent A</div>
+              <div class="section-name">3-4-person tent</div>
+              <div class="section-note">
+                Door facing inward (away from road). Footprint: ~9 × 7 ft.
+              </div>
+            </div>
+
+            <!-- CHARGING -->
+            <div class="spot-section sec-power">
+              <div class="section-label">⚡ Charging station</div>
+              <div class="section-name">Power bank hub</div>
+              <div class="section-note">
+                Central charging for the group. Label cords by person.
+              </div>
+            </div>
+
+            <!-- GEAR -->
+            <div class="spot-section sec-gear" style="flex: 1">
+              <div class="section-label">📦 Gear + Shoes</div>
+              <div class="section-name">Storage zone</div>
+              <div class="section-note">
+                Bags, shoes at tent doors.<br />Cooler on shaded side.
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== SPOT 2 — HUB ===== -->
+          <div class="spot spot-hub">
+            <div class="spot-header">
+              <div class="spot-number" style="color: var(--gold-light)">
+                Spot 2 — Communal Hub
+              </div>
+              <div class="spot-dims">30 × 10 ft &nbsp;·&nbsp; 1 vehicle required</div>
+            </div>
+
+            <!-- CAR (road-side, top 15 ft) -->
+            <div class="spot-section sec-car" style="min-height: 115px">
+              <div class="section-label">🚗 Vehicle zone — 15 ft</div>
+              <div class="section-name">Car #2</div>
+              <div class="section-note">
+                Parked parallel to road, nose-in.<br />Use trunk as staging
+                area.<br />Windblock on road side.
+              </div>
+              <div
+                style="
+                  margin-top: 8px;
+                  padding: 6px 8px;
+                  background: rgba(184, 92, 56, 0.08);
+                  border: 1px solid rgba(184, 92, 56, 0.2);
+                  border-radius: 2px;
+                  font-size: 9px;
+                  color: var(--rust-light);
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                "
+              >
+                Front bumper faces road ↑
+              </div>
+            </div>
+
+            <!-- GRILL ZONE -->
+            <div class="spot-section sec-grill" style="min-height: 90px">
+              <div class="section-label">🔥 Grill zone — Road side</div>
+              <div class="section-name">Blackstone Griddle</div>
+              <div class="section-note">
+                Positioned nearest the road for ventilation + quick access from
+                coolers. Keep away from tent zones on either side.
+              </div>
+              <div
+                style="
+                  margin-top: 8px;
+                  padding: 5px 8px;
+                  background: rgba(184, 92, 56, 0.08);
+                  border: 1px solid rgba(184, 92, 56, 0.2);
+                  border-radius: 2px;
+                  font-size: 9px;
+                  color: var(--rust-light);
+                  letter-spacing: 0.1em;
+                "
+              >
+                MIN 10 FT CLEARANCE FROM TENTS
+              </div>
+            </div>
+
+            <!-- PREP TABLE -->
+            <div class="spot-section sec-hub">
+              <div class="section-label">🍳 Food prep table</div>
+              <div class="section-name">Folding table</div>
+              <div class="section-note">
+                Directly behind grill. Cutting board, utensils, paper towels.
+              </div>
+            </div>
+
+            <!-- COOLERS -->
+            <div class="spot-section sec-gear">
+              <div class="section-label">🧊 Coolers &amp; food storage</div>
+              <div class="section-name">2× coolers + dry bins</div>
+              <div class="section-note">
+                Ice cooler left, drinks cooler right. Dry goods bin in shade.
+              </div>
+            </div>
+
+            <!-- SEATING -->
+            <div class="spot-section sec-hub" style="min-height: 80px">
+              <div class="section-label">🪑 Lounge + seating</div>
+              <div class="section-name">Camp chairs + rug</div>
+              <div class="section-note">
+                Main hangout zone. Outdoor rug defines the space. Chairs circle
+                facing each other.
+              </div>
+            </div>
+
+            <!-- TRASH -->
+            <div class="spot-section sec-gear" style="flex: 1">
+              <div class="section-label">🗑 Trash &amp; recycling</div>
+              <div class="section-name">2 bags on back edge</div>
+              <div class="section-note">
+                Back corner, downwind. Tie closed when leaving camp.
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== SPOT 3 ===== -->
+          <div class="spot">
+            <div class="spot-header">
+              <div class="spot-number">Spot 3</div>
+              <div class="spot-dims">
+                30 × 10 ft &nbsp;·&nbsp; 1 vehicle required
+              </div>
+            </div>
+
+            <!-- CAR -->
+            <div class="spot-section sec-car" style="min-height: 115px">
+              <div class="section-label">🚗 Vehicle zone — 15 ft</div>
+              <div class="section-name">Car #3</div>
+              <div class="section-note">
+                Parked parallel to road, nose-in.<br />Use trunk as staging
+                area.<br />Windblock on road side.
+              </div>
+              <div
+                style="
+                  margin-top: 8px;
+                  padding: 6px 8px;
+                  background: rgba(184, 92, 56, 0.08);
+                  border: 1px solid rgba(184, 92, 56, 0.2);
+                  border-radius: 2px;
+                  font-size: 9px;
+                  color: var(--rust-light);
+                  letter-spacing: 0.1em;
+                  text-transform: uppercase;
+                "
+              >
+                Front bumper faces road ↑
+              </div>
+            </div>
+
+            <!-- CANOPY -->
+            <div class="spot-section sec-shade">
+              <div class="section-label">☂ Canopy / wind shade</div>
+              <div class="section-name">10 × 10 ft pop-up</div>
+              <div class="section-note">
+                Mirror of Spot 1. Stake on road-facing edge for wind.
+              </div>
+            </div>
+
+            <!-- TENT B -->
+            <div class="spot-section sec-tent">
+              <div class="section-label">⛺ Sleeping — Tent B</div>
+              <div class="section-name">2-person tent</div>
+              <div class="section-note">
+                Door facing inward (away from road). Mirror layout of Spot 1.
+              </div>
+            </div>
+
+            <!-- CHARGING -->
+            <div class="spot-section sec-power">
+              <div class="section-label">⚡ Charging station</div>
+              <div class="section-name">Power bank hub</div>
+              <div class="section-note">
+                Central charging for the group. Label cords by person.
+              </div>
+            </div>
+
+            <!-- QUIET ZONE -->
+            <div
+              class="spot-section"
+              style="flex: 1; border-left: 2px solid rgba(107, 76, 138, 0.7)"
+            >
+              <div class="section-label" style="color: var(--purple-light)">
+                🌙 Quiet zone
+              </div>
+              <div class="section-name">Back corner</div>
+              <div class="section-note">
+                Designated for early sleepers. Farther from grill + road =
+                quieter.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /spots-grid -->
+
+        <!-- SCALE + ORIENTATION -->
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 20px;
+            position: relative;
+            z-index: 2;
+          "
+        >
+          <div class="scale-bar" style="margin-top: 0">
+            <div class="scale-label">Scale</div>
+            <div class="scale-ruler">
+              <div class="scale-seg"></div>
+              <div class="scale-seg"></div>
+              <div class="scale-seg"></div>
+            </div>
+            <div class="scale-text">≈ 10 ft per segment</div>
+          </div>
+          <div class="orientation-pill">
+            ⬆ Road / North &nbsp;·&nbsp; Back edge downwind
+          </div>
+        </div>
+      </div>
+      <!-- /diagram-container -->
+
+      <!-- LEGEND -->
+      <div class="legend">
+        <div class="legend-title">Zone Key</div>
+        <div class="legend-grid">
+          <div class="legend-item">
+            <div class="legend-dot" style="background: var(--rust)"></div>
+            Vehicle + grill zone
+          </div>
+          <div class="legend-item">
+            <div
+              class="legend-dot"
+              style="background: var(--green-bright)"
+            ></div>
+            Sleeping / tent zone
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot" style="background: var(--gold)"></div>
+            Communal / shade zone
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot" style="background: var(--sky)"></div>
+            Power, water &amp; storage
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot" style="background: var(--purple)"></div>
+            Quiet zone
+          </div>
+        </div>
+      </div>
+
+      <!-- NOTES -->
+      <div class="notes-grid">
+        <div class="note-card">
+          <div class="note-card-title">🌬 Wind Strategy</div>
+          <ul>
+            <li>Park cars nose-in — bodies block road-side wind</li>
+            <li>Canopies stake on road-facing edge of Spots 1 &amp; 3</li>
+            <li>Tents positioned in car's wind shadow</li>
+            <li>
+              Back edge of Spot 2: use a tarp as a rear windblock if needed
+            </li>
+          </ul>
+        </div>
+        <div class="note-card">
+          <div class="note-card-title">🍳 Cooking Setup</div>
+          <ul>
+            <li>Blackstone stays in Spot 2 only — 10 ft min from any tent</li>
+            <li>Prep table behind grill, coolers flanking both sides</li>
+            <li>Trash bags downwind at back corner of Spot 2</li>
+            <li>Propane stored under prep table, not in car</li>
+          </ul>
+        </div>
+        <div class="note-card">
+          <div class="note-card-title">⚡ Power + Charging</div>
+          <ul>
+            <li>Central hub in Spot 2 keeps everyone topped up</li>
+            <li>Label every cable — group of 4–7 = cable chaos</li>
+            <li>Solar panel on car roof or Spot 2 back edge if available</li>
+            <li>Rotate power banks on a schedule each morning</li>
+          </ul>
+        </div>
+        <div class="note-card">
+          <div class="note-card-title">🌙 Sleep Comfort</div>
+          <ul>
+            <li>
+              Spot 3 back corner = quietest — assign lightest sleepers to Spots
+              1/2
+            </li>
+            <li>Tent doors face inward (away from road and grill)</li>
+            <li>Leave 1 ft gap between tents for airflow in the heat</li>
+            <li>Earplugs, eye masks, and ear plugs packed per person</li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="header-divider"></div>
-    <div class="header-title">Car Camping Layout Guide</div>
-    <div class="header-meta">APR 10–12 &amp; 17–19, 2026 &nbsp;·&nbsp; Weekend 1 &nbsp;·&nbsp; Alex's Group</div>
-  </header>
- 
-  <!-- DIAGRAM -->
-  <div class="diagram-container">
- 
-    <div class="road-label">↑ &nbsp; CAMP ROAD / MAIN PATHWAY &nbsp; ↑</div>
-    <div class="road-line">← Road runs this direction →</div>
- 
-    <!-- Per-spot depth breakdown bar -->
-    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:4px;position:relative;z-index:2;">
-      <div>
-        <div class="meas-bar">
-          <div class="meas-seg car-zone">15 ft — Car</div>
-          <div class="meas-seg tent-zone">15 ft — Camp</div>
-        </div>
-        <div class="meas-caption">Spot depth (30 ft total)</div>
+    <!-- /wrapper -->
+
+    <footer>
+      <div class="footer-logo">COACHELLA 2026</div>
+      <div class="footer-text">
+        Car Camping · Weekend 1 · Created for Alex's group
       </div>
-      <div>
-        <div class="meas-bar">
-          <div class="meas-seg hub-zone">30 ft — Communal zone</div>
-        </div>
-        <div class="meas-caption">Spot depth (30 ft total)</div>
-      </div>
-      <div>
-        <div class="meas-bar">
-          <div class="meas-seg car-zone">15 ft — Car</div>
-          <div class="meas-seg tent-zone">15 ft — Camp</div>
-        </div>
-        <div class="meas-caption">Spot depth (30 ft total)</div>
-      </div>
-    </div>
- 
-    <!-- SPOTS GRID -->
-    <div class="spots-grid">
- 
-      <!-- ===== SPOT 1 ===== -->
-      <div class="spot">
-        <div class="spot-header">
-          <div class="spot-number">Spot 1</div>
-          <div class="spot-dims">30 × 10 ft &nbsp;·&nbsp; 1 vehicle required</div>
-        </div>
- 
-        <!-- CAR (road-side, top 15 ft) -->
-        <div class="spot-section sec-car" style="min-height:115px;">
-          <div class="section-label">🚗 Vehicle zone — 15 ft</div>
-          <div class="section-name">Car #1</div>
-          <div class="section-note">Parked parallel to road, nose-in.<br>Use trunk as staging area.<br>Windblock on road side.</div>
-          <div style="margin-top:8px;padding:6px 8px;background:rgba(184,92,56,0.08);border:1px solid rgba(184,92,56,0.2);border-radius:2px;font-size:9px;color:var(--rust-light);letter-spacing:0.1em;text-transform:uppercase;">Front bumper faces road ↑</div>
-        </div>
- 
-        <!-- CANOPY -->
-        <div class="spot-section sec-shade">
-          <div class="section-label">☂ Canopy / wind shade</div>
-          <div class="section-name">10 × 10 ft pop-up</div>
-          <div class="section-note">Stake between car + tent for midday shade. Tie to car rack.</div>
-        </div>
- 
-        <!-- TENT A -->
-        <div class="spot-section sec-tent">
-          <div class="section-label">⛺ Sleeping — Tent A</div>
-          <div class="section-name">2-person tent</div>
-          <div class="section-note">Door facing inward (away from road). Footprint: ~6 × 8 ft.</div>
-        </div>
- 
-        <!-- TENT B -->
-        <div class="spot-section sec-tent">
-          <div class="section-label">⛺ Sleeping — Tent B</div>
-          <div class="section-name">2-person tent</div>
-          <div class="section-note">Alongside Tent A. Side-by-side layout, leave 1 ft gap for airflow.</div>
-        </div>
- 
-        <!-- GEAR -->
-        <div class="spot-section sec-gear" style="flex:1;">
-          <div class="section-label">📦 Gear + Shoes</div>
-          <div class="section-name">Storage zone</div>
-          <div class="section-note">Bags, shoes at tent doors.<br>Cooler on shaded side.</div>
-        </div>
-      </div>
- 
-      <!-- ===== SPOT 2 — HUB ===== -->
-      <div class="spot spot-hub">
-        <div class="spot-header">
-          <div class="spot-number" style="color:var(--gold-light);">Spot 2 — Communal Hub</div>
-          <div class="spot-dims">30 × 10 ft &nbsp;·&nbsp; No vehicle</div>
-        </div>
- 
-        <!-- GRILL ZONE -->
-        <div class="spot-section sec-grill" style="min-height:90px;">
-          <div class="section-label">🔥 Grill zone — Road side</div>
-          <div class="section-name">Blackstone Griddle</div>
-          <div class="section-note">Positioned nearest the road for ventilation + quick access from coolers. Keep away from tent zones on either side.</div>
-          <div style="margin-top:8px;padding:5px 8px;background:rgba(184,92,56,0.08);border:1px solid rgba(184,92,56,0.2);border-radius:2px;font-size:9px;color:var(--rust-light);letter-spacing:0.1em;">MIN 10 FT CLEARANCE FROM TENTS</div>
-        </div>
- 
-        <!-- PREP TABLE -->
-        <div class="spot-section sec-hub">
-          <div class="section-label">🍳 Food prep table</div>
-          <div class="section-name">Folding table</div>
-          <div class="section-note">Directly behind grill. Cutting board, utensils, paper towels.</div>
-        </div>
- 
-        <!-- COOLERS -->
-        <div class="spot-section sec-gear">
-          <div class="section-label">🧊 Coolers &amp; food storage</div>
-          <div class="section-name">2× coolers + dry bins</div>
-          <div class="section-note">Ice cooler left, drinks cooler right. Dry goods bin in shade.</div>
-        </div>
- 
-        <!-- SEATING -->
-        <div class="spot-section sec-hub" style="min-height:80px;">
-          <div class="section-label">🪑 Lounge + seating</div>
-          <div class="section-name">Camp chairs + rug</div>
-          <div class="section-note">Main hangout zone. Outdoor rug defines the space. Chairs circle facing each other.</div>
-        </div>
- 
-        <!-- CHARGING -->
-        <div class="spot-section sec-power">
-          <div class="section-label">⚡ Charging station</div>
-          <div class="section-name">Power bank hub</div>
-          <div class="section-note">Central charging for the group. Label cords by person.</div>
-        </div>
- 
-        <!-- TRASH -->
-        <div class="spot-section sec-gear" style="flex:1;">
-          <div class="section-label">🗑 Trash &amp; recycling</div>
-          <div class="section-name">2 bags on back edge</div>
-          <div class="section-note">Back corner, downwind. Tie closed when leaving camp.</div>
-        </div>
-      </div>
- 
-      <!-- ===== SPOT 3 ===== -->
-      <div class="spot">
-        <div class="spot-header">
-          <div class="spot-number">Spot 3</div>
-          <div class="spot-dims">30 × 10 ft &nbsp;·&nbsp; 1 vehicle required</div>
-        </div>
- 
-        <!-- CAR -->
-        <div class="spot-section sec-car" style="min-height:115px;">
-          <div class="section-label">🚗 Vehicle zone — 15 ft</div>
-          <div class="section-name">Car #2</div>
-          <div class="section-note">Parked parallel to road, nose-in.<br>Use trunk as staging area.<br>Windblock on road side.</div>
-          <div style="margin-top:8px;padding:6px 8px;background:rgba(184,92,56,0.08);border:1px solid rgba(184,92,56,0.2);border-radius:2px;font-size:9px;color:var(--rust-light);letter-spacing:0.1em;text-transform:uppercase;">Front bumper faces road ↑</div>
-        </div>
- 
-        <!-- CANOPY -->
-        <div class="spot-section sec-shade">
-          <div class="section-label">☂ Canopy / wind shade</div>
-          <div class="section-name">10 × 10 ft pop-up</div>
-          <div class="section-note">Mirror of Spot 1. Stake on road-facing edge for wind.</div>
-        </div>
- 
-        <!-- TENT C -->
-        <div class="spot-section sec-tent">
-          <div class="section-label">⛺ Sleeping — Tent C</div>
-          <div class="section-name">2-person tent</div>
-          <div class="section-note">Door facing inward (away from road). Mirror layout of Spot 1.</div>
-        </div>
- 
-        <!-- TENT D (optional) -->
-        <div class="spot-section sec-tent">
-          <div class="section-label">⛺ Sleeping — Tent D (opt.)</div>
-          <div class="section-name">Solo or 2-person</div>
-          <div class="section-note">Flex spot for 5th–7th person. Can also be extra storage if group is 4.</div>
-        </div>
- 
-        <!-- QUIET ZONE -->
-        <div class="spot-section" style="flex:1;border-left:2px solid rgba(107,76,138,0.7);">
-          <div class="section-label" style="color:var(--purple-light);">🌙 Quiet zone</div>
-          <div class="section-name">Back corner</div>
-          <div class="section-note">Designated for early sleepers. Farther from grill + road = quieter.</div>
-        </div>
-      </div>
- 
-    </div><!-- /spots-grid -->
- 
-    <!-- SCALE + ORIENTATION -->
-    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-top:20px;position:relative;z-index:2;">
-      <div class="scale-bar" style="margin-top:0;">
-        <div class="scale-label">Scale</div>
-        <div class="scale-ruler">
-          <div class="scale-seg"></div>
-          <div class="scale-seg"></div>
-          <div class="scale-seg"></div>
-        </div>
-        <div class="scale-text">≈ 10 ft per segment</div>
-      </div>
-      <div class="orientation-pill">⬆ Road / North &nbsp;·&nbsp; Back edge downwind</div>
-    </div>
- 
-  </div><!-- /diagram-container -->
- 
-  <!-- LEGEND -->
-  <div class="legend">
-    <div class="legend-title">Zone Key</div>
-    <div class="legend-grid">
-      <div class="legend-item">
-        <div class="legend-dot" style="background:var(--rust);"></div>
-        Vehicle + grill zone
-      </div>
-      <div class="legend-item">
-        <div class="legend-dot" style="background:var(--green-bright);"></div>
-        Sleeping / tent zone
-      </div>
-      <div class="legend-item">
-        <div class="legend-dot" style="background:var(--gold);"></div>
-        Communal / shade zone
-      </div>
-      <div class="legend-item">
-        <div class="legend-dot" style="background:var(--sky);"></div>
-        Power, water &amp; storage
-      </div>
-      <div class="legend-item">
-        <div class="legend-dot" style="background:var(--purple);"></div>
-        Quiet zone
-      </div>
-    </div>
-  </div>
- 
-  <!-- NOTES -->
-  <div class="notes-grid">
-    <div class="note-card">
-      <div class="note-card-title">🌬 Wind Strategy</div>
-      <ul>
-        <li>Park cars nose-in — bodies block road-side wind</li>
-        <li>Canopies stake on road-facing edge of Spots 1 &amp; 3</li>
-        <li>Tents positioned in car's wind shadow</li>
-        <li>Back edge of Spot 2: use a tarp as a rear windblock if needed</li>
-      </ul>
-    </div>
-    <div class="note-card">
-      <div class="note-card-title">🍳 Cooking Setup</div>
-      <ul>
-        <li>Blackstone stays in Spot 2 only — 10 ft min from any tent</li>
-        <li>Prep table behind grill, coolers flanking both sides</li>
-        <li>Trash bags downwind at back corner of Spot 2</li>
-        <li>Propane stored under prep table, not in car</li>
-      </ul>
-    </div>
-    <div class="note-card">
-      <div class="note-card-title">⚡ Power + Charging</div>
-      <ul>
-        <li>Central hub in Spot 2 keeps everyone topped up</li>
-        <li>Label every cable — group of 4–7 = cable chaos</li>
-        <li>Solar panel on car roof or Spot 2 back edge if available</li>
-        <li>Rotate power banks on a schedule each morning</li>
-      </ul>
-    </div>
-    <div class="note-card">
-      <div class="note-card-title">🌙 Sleep Comfort</div>
-      <ul>
-        <li>Spot 3 back corner = quietest — assign lightest sleepers to Spots 1/2</li>
-        <li>Tent doors face inward (away from road and grill)</li>
-        <li>Leave 1 ft gap between tents for airflow in the heat</li>
-        <li>Earplugs, eye masks, and ear plugs packed per person</li>
-      </ul>
-    </div>
-  </div>
- 
-</div><!-- /wrapper -->
- 
-<footer>
-  <div class="footer-logo">COACHELLA 2026</div>
-  <div class="footer-text">Car Camping · Weekend 1 · Created for Alex's group</div>
-</footer>
- 
-<script src="main.js"></script>
-</body>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
 </html>
